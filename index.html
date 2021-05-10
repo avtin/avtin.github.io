@@ -1,68 +1,297 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-US">
 <head>
+<meta charset="UTF-8">
+<title>Harlington Realty</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
-  <title>Bare - Start Bootstrap Template</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
+<!-- javascript -->
+    <script src="js/owl.carousel.js"></script>
 </head>
 
-<body>
+<body>    
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<header id="header" class="my-to-header">
+<div class="head-mid">
+<div class="container">
+		<div class="row">
+			<div class="col-sm-12"><h1>Your new home awaits.</h1></div>
+			<div class="col-sm-12">
+				<form class="form-sec">
+					<select name="neighborhood" id="" class="form-field">
+						<option value="">Neighborhood</option>
+						<option value="home1">Home1</option>
+						<option value="home2">Home2</option>
+						<option value="home3">Home3</option>
+					</select>
+					<select name="bedrooms" id="" class="form-field">
+						<option value="">Bedrooms</option>
+						<option value="home1">Home1</option>
+						<option value="home2">Home2</option>
+						<option value="home3">Home3</option>
+					</select>
+					<select name="min-rent" id="" class="form-field form-field-half">
+						<option value="">Min Rent</option>
+						<option value="home1">Home1</option>
+						<option value="home2">Home2</option>
+						<option value="home3">Home3</option>
+					</select>
+					<select name="max-rent" id="" class="form-field form-field-half">
+						<option value="">Max Rent</option>
+						<option value="home1">Home1</option>
+						<option value="home2">Home2</option>
+						<option value="home3">Home3</option>
+					</select>
+					<select name="amenities" id="" class="form-field">
+						<option value="">Amenities</option>
+						<option value="home1">Home1</option>
+						<option value="home2">Home2</option>
+						<option value="home3">Home3</option>
+					</select>
+					<div class="form-field form-field-half form-field-pd" style="border-bottom:0;">
+						<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+						<label for="vehicle1"> Open House</label>
+					</div>
+					<div class="form-field form-field-half form-field-pd right-align">
+						<input type="submit" value="Submit">
+					</div>
+				</form>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="nav-bar">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="logo"><a href="#"><img src="images/logo.png"></a></div>
+				<div class="moblogo"><a href="#"><img src="images/mob-logo.png"></a></div>
+			</div>
+			<div class="col-sm-8">
+			  <nav class="navbar-expand-lg navbar-light">
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="top-nav navbar-nav mr-auto">
+				 <li class="nav-item"><a href="#">Residential</a></li>
+				 <li class="nav-item"><a href="#">Commercial & Storage</a></li>
+				 <li class="wht-button nav-item"><a href="#">Contact</a></li>
+				 <li class="red-button nav-item"><a href="#" class="selected">Apply now</a></li>
+				</ul>
+			  </div>
+			  </nav>
+			</div>
+		</div>
+	</div>
+</div>
+</header><!-- #header -->
+<main>
+<section class="listing-sec">
+	<div class="container">
+			<div class="row">
+			  <div class="col-sm-12"><h2 align="center">New Listings</h2></div>
+			  <div class="col-sm-12">
+				<div class="listing-crsl owl-carousel owl-theme">
+					<div class="list-item" align="center">
+						<div class="list-img"><a href="#"><img src="images/monitor.jpg"></a></div>
+						<div class="list-cat">MANHATTAN</div>
+						<div class="list-title"><h3>226 East 70th Street</h3></div>
+						<div class="list-des">3BR // 2.0 BATH // <span style="color:#dbb37c;">$4,995 MO</span></div>
+					</div>
+					<div class="list-item" align="center">
+						<div class="list-img"><a href="#"><img src="images/manhattan.jpg"></a></div>
+						<div class="list-cat">MANHATTAN</div>
+						<div class="list-title"><h3>226 East 70th Street</h3></div>
+						<div class="list-des">3BR // 2.0 BATH // <span style="color:#dbb37c;">$4,995 MO</span></div>
+					</div>
+					<div class="list-item" align="center">
+						<div class="list-img"><a href="#"><img src="images/hotel.jpg"></a></div>
+						<div class="list-cat red-bg">Bronx</div>
+						<div class="list-title"><h3>226 East 70th Street</h3></div>
+						<div class="list-des">3BR // 2.0 BATH // <span style="color:#dbb37c;">$4,995 MO</span></div>
+					</div>
+					<div class="list-item" align="center">
+						<div class="list-img"><a href="#"><img src="images/garden.jpg"></a></div>
+						<div class="list-cat blue-bg">Queens</div>
+						<div class="list-title"><h3>226 East 70th Street</h3></div>
+						<div class="list-des">3BR // 2.0 BATH // <span style="color:#dbb37c;">$4,995 MO</span></div>
+					</div>
+				</div>
+			  </div>
+			  
+			<div class="col-sm-12" align="center">
+				<a href="#" class="red-btn">all neighborhoods <i class="fas fa-long-arrow-alt-right"></i></a>
+			</div>
+			</div>
+	</div>
+</section>
+<section class="hm-content">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>About Harlington</h2>
+			</div>
+		</div>
+	    <div class="row">
+		  <div class="col-sm-6">
+			<p>Since 1974, our management companies have been renting homes to New Yorkers looking for quality apartments at competitive prices. Our family-oriented approach to 
+ownership and management allows us to treat each resident with a practiced level of courtesy and assistance.</p>
 
-  <!-- Page Content -->
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-        <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-        <ul class="list-unstyled">
-          <li>Bootstrap 4.5.3</li>
-          <li>jQuery 3.5.1</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<p>Our goal is to make you feel at home. Whether you are 
+searching for a pet-friendly NYC building, a no fee 
+apartment (when you rent directly from us) or a home 
+suitable for your family, roommate or just yourself, 
+we offer a space for every need. With residential buildings
+in Manhattan, Queens and The Bronx, we offer a diverse 
+portfolio comprised of more than fifty properties and 
+nearly one thousand apartments.</p>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<p>In addition, we own and manage more than one hundred 
+retail and professional spaces, and our approach boasts 
+the same level of consideration and attention. Retail 
+locations are primarily on Long Island, as well as 
+Manhattan, The Bronx, and Queens. Our premiere storage 
+facility, Temple Terrace Business and Storage Park, is located in Tampa Bay, Florida.</p>
+		  </div>
+		  <div class="col-sm-6">
+			<p>Based in New York City, our team is a tight-nit group of 
+dedicated professionals ready to help our residents and retail 
+tenants have the best possible renting experience.</p>
 
+<p>Our management companies include:</p>
+
+<ul class="list-style">
+<li>Harlington Realty Co. LLC</li>
+<li>Clearwater Properties LLC</li>
+<li>Flagg Equities LLC</li>
+<li>North West LLC</li>
+<li>TTS Park Associates</li>
+</ul>
+
+<p>Our team handles the day-to-day operations for all buildings, 
+regardless of the associated management company.</p>
+		  </div>
+		</div>
+	</div>
+</section>
+</main>
+<footer>
+<section class="recent-view">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>RECENTLY VIEWED</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+			  <div class="prd-item" align="center">
+			    <div class="prd-img"><a href="#"><img src="images/monitor.jpg"></a></div>
+				<h3>226 East 70th Street</h3>
+			  </div>
+			</div>
+			<div class="col-sm-3" align="center">
+			  <div class="prd-item">
+			    <div class="prd-img"><a href="#"><img src="images/manhattan.jpg"></a></div>
+				<h3>157 East 81st Street</h3>
+			  </div>
+			</div>
+			<div class="col-sm-3" align="center">
+			  <div class="prd-item">
+			    <div class="prd-img prd-rd-img"><a href="#"><img src="images/hotel.jpg"></a></div>
+				<h3>3265 Bainbridge Ave</h3>
+			  </div>
+			</div>
+			<div class="col-sm-3" align="center">
+			  <div class="prd-item">
+			    <div class="prd-img prd-bl-img"><a href="#"><img src="images/garden.jpg"></a></div>
+				<h3>37-55 77th Street</h3>
+			  </div>
+			</div>
+		</div>
+		
+	</div>
+</section>
+
+<section class="footer-bottom">
+	<div class="container">
+	  <div class="footer-sec">
+		<div class="row">
+			<div class="col-xs-6 col-sm-6">212.734.9500</div>
+			<div class="col-xs-6 col-sm-6">
+				<div class="social-media">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-6">
+				<ul class="footer-nav">
+					<li><a href="#">login</a></li>
+					<li><a href="#">properties</a></li>
+					<li><a href="#">terms & conditions</a></li>
+					<li><a href="#">privacy policy</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="copy-text">
+					© 2020 Harlington Realty Co LLC / iOfficeSpace LLC
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</section>
+</footer>
+<script>
+            $(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                loop: true,
+                nav: true,
+				dots: false,
+                margin: 20,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  600: {
+                    items: 3
+                  },
+                  960: {
+                    items: 4
+                  },
+                  1200: {
+                    items: 4
+                  }
+                }
+              });
+              owl.on('mousewheel', '.owl-stage', function(e) {
+                if (e.deltaY > 0) {
+                  owl.trigger('next.owl');
+                } else {
+                  owl.trigger('prev.owl');
+                }
+                e.preventDefault();
+              });
+            })
+          </script>
 </body>
-
 </html>
