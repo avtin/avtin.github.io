@@ -115,19 +115,19 @@
 					<div class="list-item" align="center">
 						<div class="list-img"><a href="#"><img src="images/manhattan.jpg"></a></div>
 						<div class="list-cat">MANHATTAN</div>
-						<div class="list-title"><h3>226 East 70th Street</h3></div>
+						<div class="list-title"><h3>157 East 81st Street</h3></div>
 						<div class="list-des">3BR // 2.0 BATH // <span style="color:#dbb37c;">$4,995 MO</span></div>
 					</div>
 					<div class="list-item" align="center">
 						<div class="list-img"><a href="#"><img src="images/hotel.jpg"></a></div>
 						<div class="list-cat red-bg">Bronx</div>
-						<div class="list-title"><h3>226 East 70th Street</h3></div>
+						<div class="list-title"><h3>3265 Bainbridge Ave</h3></div>
 						<div class="list-des">3BR // 2.0 BATH // <span style="color:#dbb37c;">$4,995 MO</span></div>
 					</div>
 					<div class="list-item" align="center">
 						<div class="list-img"><a href="#"><img src="images/garden.jpg"></a></div>
 						<div class="list-cat blue-bg">Queens</div>
-						<div class="list-title"><h3>226 East 70th Street</h3></div>
+						<div class="list-title"><h3>37-55 77th Street</h3></div>
 						<div class="list-des">3BR // 2.0 BATH // <span style="color:#dbb37c;">$4,995 MO</span></div>
 					</div>
 				</div>
@@ -147,7 +147,7 @@
 			</div>
 		</div>
 	    <div class="row">
-		  <div class="col-sm-6">
+		  <div class="col-sm-6" style="padding-right: 4%;">
 			<p>Since 1974, our management companies have been renting homes to New Yorkers looking for quality apartments at competitive prices. Our family-oriented approach to 
 ownership and management allows us to treat each resident with a practiced level of courtesy and assistance.</p>
 
@@ -167,7 +167,8 @@ locations are primarily on Long Island, as well as
 Manhattan, The Bronx, and Queens. Our premiere storage 
 facility, Temple Terrace Business and Storage Park, is located in Tampa Bay, Florida.</p>
 		  </div>
-		  <div class="col-sm-6">
+		  
+		  <div class="col-sm-6" style="padding-left: 5%;">
 			<p>Based in New York City, our team is a tight-nit group of 
 dedicated professionals ready to help our residents and retail 
 tenants have the best possible renting experience.</p>
@@ -179,9 +180,10 @@ tenants have the best possible renting experience.</p>
 <li>Clearwater Properties LLC</li>
 <li>Flagg Equities LLC</li>
 <li>North West LLC</li>
-<li>TTS Park Associates</li>
+<li style="margin-bottom: 0;">TTS Park Associates</li>
 </ul>
-
+&nbsp;
+<br><br>
 <p>Our team handles the day-to-day operations for all buildings, 
 regardless of the associated management company.</p>
 		  </div>
@@ -264,7 +266,7 @@ regardless of the associated management company.</p>
             $(document).ready(function() {
               var owl = $('.owl-carousel');
               owl.owlCarousel({
-                loop: true,
+                loop: false,
                 nav: true,
 				dots: false,
                 margin: 20,
@@ -273,7 +275,8 @@ regardless of the associated management company.</p>
                     items: 1
                   },
                   600: {
-                    items: 3
+                    items: 3,
+					nav: false,
                   },
                   960: {
                     items: 4
